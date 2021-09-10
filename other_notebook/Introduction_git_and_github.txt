@@ -1,0 +1,226 @@
+# 1.Set up your user name and e-mail for git hub
+
+run
+
+    $git config --global user.name "Your user name"
+    $git config --global user.email "Your_emainl@example.com"
+
+Then your information will store in "~/.gitconfig"
+You can change these informations directly change this file. The changes will be submitted into GitHub'
+
+
+# 2.Colne the repository using git
+
+run 
+
+    $git clone URL
+to clone the romote repository to your local device.
+For example
+
+    $git clone https://github.com/jiangnan6biguo/MyNotebook.git
+
+and then you will find the folder  MyNotebook in your present work direction
+
+    $cd MyNotebook
+
+
+# 3.Check the status of your files
+run
+
+    $git status
+
+Will show all the status of your files in present work direction
+
+For example 
+
+位于分支 main
+您的分支与上游分支 'origin/main' 一致。
+
+未跟踪的文件:
+  （使用 "git add <文件>..." 以包含要提交的内容）
+	hello_world.py
+
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+
+
+# 4.add your code to repository
+
+When your code is untracked, you can run
+
+    $git add hello_world.py
+
+Then
+
+    $git status
+
+位于分支 main
+您的分支与上游分支 'origin/main' 一致。
+
+要提交的变更：
+  （使用 "git restore --staged <文件>..." 以取消暂存）
+	新文件：   hello_world.py
+
+    $git commit -m "Add my first python file"
+
+\[main 15f758a] Add my first python file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.py
+
+    $git status
+
+位于分支 main
+您的分支领先 'origin/main' 共 1 个提交。
+  （使用 "git push" 来发布您的本地提交）
+
+无文件要提交，干净的工作区
+
+We can check the log using
+
+    $git log
+
+
+commit 15f758a998f1b414cd2a4ac34d21185e4a79b72a (HEAD -> main)
+Author: jiangnan6biguo <812331443@qq.com>
+Date:   Fri Sep 10 14:31:16 2021 +0800
+
+Add my first python file
+
+commit 8bb01b0809a0396fa2f05da38b9a66631660745e (origin/main, origin/HEAD)
+Author: jiangnan6biguo <37701251+jiangnan6biguo@users.noreply.github.com>
+Date:   Mon Sep 6 19:39:36 2021 +0800
+
+Initial commit
+
+The if we want to sent to repository
+
+    $git pull
+
+
+# 5 Create your own repository
+
+First you need to create a direction
+
+    $mkdir git-tutorial
+
+    $cd git tutorial
+
+    $git init
+
+If you want to add your own file
+
+    $touch README.md
+
+    $git status
+
+位于分支 master
+
+尚无提交
+
+未跟踪的文件:
+  （使用 "git add <文件>..." 以包含要提交的内容）
+	README.md
+
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+
+
+    $git add README.md
+
+    $git status
+    
+位于分支 master
+
+尚无提交
+
+要提交的变更：
+  （使用 "git rm --cached <文件>..." 以取消暂存）
+	新文件：   README.md
+
+
+If you want to write a long commit message, you can just 
+
+    $git commit
+
+and then add the remote repository origin
+
+    $git remote add origin URL
+
+For example
+
+    $git remote add origin https://github.com/jiangnan6biguo/jiangnan6biguo.git
+    
+    
+Then you can check your branch
+
+    $git branch -a
+    
+or 
+    
+    $git branch
+    
+* feature-A
+    
+and then if you want to change your branch
+
+    $git checkout branch_name
+    
+    
+    
+    
+    
+You can also check your origin URL using
+
+    $git remote show origin
+
+* 远程 origin
+  获取地址：https://github.com/jiangnan6biguo/jiangnan6biguo.git
+  推送地址：https://github.com/jiangnan6biguo/jiangnan6biguo.git
+  HEAD 分支：（未知）
+
+
+Finally you can push your file to remote repository, and then your repository change finishes.
+
+    $git push -u origin feature-A
+
+
+Username for 'https://github.com': jiangnan6biguo
+Password for 'https://jiangnan6biguo@github.com': 
+枚举对象中: 3, 完成.
+对象计数中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 221 字节 | 221.00 KiB/s, 完成.
+总共 3 （差异 0），复用 0 （差异 0）
+To https://github.com/jiangnan6biguo/jiangnan6biguo.git
+ * [new branch]      feature-A -> feature-A
+分支 'feature-A' 设置为跟踪来自 'origin' 的远程分支 'feature-A'。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
