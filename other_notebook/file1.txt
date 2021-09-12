@@ -1,0 +1,11 @@
+总用量 36
+drwxrwxr-x 2 richard richard 4096 9月  12 11:05 .
+drwxrwxr-x 5 richard richard 4096 9月  10 19:25 ..
+-rw-rw-r-- 1 richard richard    0 9月  12 11:05 file1.txt
+-rw-rw-r-- 1 richard richard    0 9月  12 11:05 file2.txt
+-rw-rw-r-- 1 richard richard  104 9月  12 11:04 file.txt
+-rw-rw-r-- 1 richard richard   29 9月  11 19:50 hello.txt
+-rw-rw-r-- 1 richard richard 4097 9月  10 18:30 Introduction_git_and_github.txt
+-rwxrwxr-x 1 richard richard 1552 9月  11 19:51 Notebook_bash1.sh
+-rwxrwxr-x 1 richard richard  901 9月  12 10:12 Notebook_bash2.sh
+-rwxrwxr-x 1 richard richard  794 9月  12 11:05 Notebook_bash3.sh
